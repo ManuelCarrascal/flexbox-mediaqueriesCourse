@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color: rgb(192, 197, 176);
+    display: flex;
+    justify-content: space-between;
+}
+.container div{
+    padding: 15px;
+    border: 1px solid red;
+    /* width: 30%; */
+    flex-basis: 30%;
+}
+.box-1{
+    background-color: orange;
+}
+.box-2{
+    background-color: rgb(49, 196, 196);
+}
+.box-3{
+    background-color: blueviolet;
+}
+
+/* .box-1{
+    flex: 1 ;
+}
+.box-2{
+    flex: 1 ;
+}
+.box-3{
+    flex: 1 ;
+} */
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+}
